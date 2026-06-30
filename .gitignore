@@ -1,0 +1,63 @@
+# ============================================
+#  MNIST Dataset — heavy files, downloaded separately
+# ============================================
+# Ignore everything inside data/ ...
+data/*
+# ... but keep the download instructions (also keeps the folder in the repo)
+!data/README.md
+!data/HOW_TO_GET_DATA.txt
+
+# Common MNIST file extensions (in case they live elsewhere)
+*.idx3-ubyte
+*.idx1-ubyte
+*-ubyte
+*.gz
+
+# ============================================
+#  Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================
+#  macOS
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ============================================
+#  Editors / IDEs
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================
+#  Project-specific
+# ============================================
+# Uncomment the next line ONLY if you do NOT want to
+# commit your trained model. (You probably DO want to
+# commit weights.json for the web version, so it stays commented.)
+# weights.json
